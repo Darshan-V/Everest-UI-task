@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    background-color: #ffffff;
+    text-align: center;
+    height: fit-content;
+    padding: 2% 0;
+}
+
+.logo{
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.mobileMenuIcon{
+    display: none; /* hide the icon by default */
+}
+
+@media (max-width: 767px) {
+    .mobileMenuIcon {
+        display: block; /* show the icon only on mobile screens */
+        padding: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+}
