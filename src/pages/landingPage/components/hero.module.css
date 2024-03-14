@@ -23,7 +23,7 @@
     margin-top: 20px;
 }
 
-@media (max-width: 430px) {
+@media screen and (max-width: 430px) {
     .heroContainer {
         display: flex;
         flex-direction: column;
@@ -49,12 +49,19 @@
         margin: auto;
         height: 100%;
     }
-    .boxImage{
+    .boxImageContainer{
+        position: relative;
         width:712px;
         height: 600px;
-        background-position: scale;
-        position: relative;
+        margin-top: 20px;
         left: -230px;
+
+    }
+    .boxImage{
+        width:100%;
+        height:100%;
+        background-position: scale;
+        aspect-ratio: 1/1;
         
     }
 }
