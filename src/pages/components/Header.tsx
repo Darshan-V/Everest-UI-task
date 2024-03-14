@@ -1,5 +1,10 @@
 import React, { useState } from "react";
+
+// Header assets
 import hamburgerIcon from "../../assets/ui/hamburger.svg";
+import Logo from "../../assets/ui/logo.svg";
+
+// Header styles
 import style from "./header.module.css";
 
 const Header: React.FC = () => {
@@ -11,7 +16,8 @@ const Header: React.FC = () => {
 
   return (
     <header className={style.header}>
-      <div className={style.logo}>Logo</div>
+      <img src={Logo} className={style.logo} />
+
       <nav className={`navbar ${isMobileMenuOpen ? "open" : ""}`}>
         {/* Navbar items */}
       </nav>
