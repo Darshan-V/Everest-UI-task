@@ -3,7 +3,7 @@ import CustomButton from "../../components/CustomButton";
 
 import HeroStyles from "./hero.module.css";
 
-import boxImage from "../../assets/ui/box.png";
+import boxImage from "../../../assets/ui/box.png";
 
 const Hero: React.FC = () => {
   return (
