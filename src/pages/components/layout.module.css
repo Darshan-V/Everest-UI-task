@@ -21,6 +21,7 @@
     .topbar{
         width: 100%;
         background-image: url("../../assets/ui/topbar-mobile.png");
+        background-repeat: no-repeat;
         height: 10px;
     }
 }
