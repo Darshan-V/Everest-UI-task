@@ -1,0 +1,28 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 0 ; 
+}
+
+.topbar{
+    width: 100%;
+    background-image: url("../../assets/ui/topbar-desktop.png");
+    height: 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 320px) {
+    #wrapper {
+        width:100%;  
+        margin: 0 ; 
+    }
+    .topbar{
+        width: 100%;
+        background-image: url("../../assets/ui/topbar-mobile.png");
+        height: 10px;
+    }
+}
+
+
