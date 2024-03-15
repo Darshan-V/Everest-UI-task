@@ -20,7 +20,7 @@
     display: none; /* hide the icon by default */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 430px) {
     .mobileMenuIcon {
         display: block; /* show the icon only on mobile screens */
         padding: 10px;
