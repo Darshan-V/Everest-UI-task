@@ -30,6 +30,19 @@
         margin: 2rem ;
     }
 
+    .stepTitle{
+        font-family: Roboto, sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 44px;
+    }
+
+    .stepDescription{
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+    }
 
     .heading {
         font-family: 'DM Serif Text', serif;
