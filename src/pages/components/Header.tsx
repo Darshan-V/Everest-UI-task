@@ -5,7 +5,7 @@ import hamburgerIcon from "../../assets/ui/hamburger.svg";
 import Logo from "../../assets/ui/logo.svg";
 
 // Header styles
-import style from "./header.module.css";
+import HeaderStyle from "./header.module.css";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,14 +15,14 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={style.header}>
-      <img src={Logo} className={style.logo} />
+    <header className={HeaderStyle.header}>
+      <img src={Logo} className={HeaderStyle.logo} />
 
       <nav className={`navbar ${isMobileMenuOpen ? "open" : ""}`}>
         {/* Navbar items */}
       </nav>
       <div
-        className={`mobile-menu-icon ${style.mobileMenuIcon}`}
+        className={`mobile-menu-icon ${HeaderStyle.mobileMenuIcon}`}
         onClick={toggleMobileMenu}
       >
         <img src={hamburgerIcon} alt="Hamburger Icon" />
