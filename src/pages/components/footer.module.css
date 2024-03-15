@@ -19,6 +19,7 @@
     text-align: center;
     height: fit-content;
     margin: 10px;
+    padding: 10px;
 }
 
 .logo{
@@ -30,7 +31,6 @@
 @media screen and (max-width: 430px) {
     
     .logo{
-        padding: 28px 0px;
         width: 138px;
         height: 28px;
     }
