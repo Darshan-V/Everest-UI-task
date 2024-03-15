@@ -6,9 +6,10 @@ import Logo from "../../assets/ui/logo.svg";
 
 // Header styles
 import HeaderStyle from "./header.module.css";
+import MobileMenu from "./MobileMenu";
 
 const Header: React.FC = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -27,6 +28,7 @@ const Header: React.FC = () => {
       >
         <img src={hamburgerIcon} alt="Hamburger Icon" />
       </div>
+      {isMobileMenuOpen ? <MobileMenu closeMenu={setIsMobileMenuOpen} /> : null}
     </header>
   );
 };
