@@ -2,7 +2,7 @@ import React from "react";
 
 import stepOneStyles from "./stepOneImage.module.css";
 
-const StepOneImage = () => {
+const StepOneImage: React.FC = () => {
   return (
     <div className={stepOneStyles.container}>
       <div className={stepOneStyles.stepOneImage} />
