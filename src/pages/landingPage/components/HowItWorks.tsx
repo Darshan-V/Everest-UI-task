@@ -4,6 +4,7 @@ import StepOneImage from "./StepOneImage";
 import howItWorksStyles from "./howItWorks.module.css";
 
 import Underline from "../../../assets/ui/UI.svg";
+import StepTwoImage from "./StepTwoImage";
 
 const stepsData = [
   {
@@ -16,6 +17,7 @@ const stepsData = [
     title: "Review your custom box",
     description:
       "Once we get to know you, we will show you the box we’ve crafted. This is your chance to approve it before we ship it to your house.",
+    imageLabel: <StepTwoImage />,
   },
   {
     title: "Try it on at home",
