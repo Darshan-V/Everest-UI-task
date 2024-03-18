@@ -13,14 +13,26 @@ const Footer: React.FC = () => {
       <div className={footerStyle.footerContainer}>
         <img src={Logo} className={footerStyle.logo} />
         <div className={footerStyle.footerSocialMediaIconsContainer}>
-          <a href="#" className={footerStyle.socialMediaIcons}>
-            <img src={Instagram} alt="Instagram" />
+          <a href="#">
+            <img
+              className={footerStyle.socialMediaIcons}
+              src={Instagram}
+              alt="Instagram"
+            />
           </a>
-          <a href="#" className={footerStyle.socialMediaIcons}>
-            <img src={Facebook} alt="Facebook" />
+          <a href="#">
+            <img
+              className={footerStyle.socialMediaIcons}
+              src={Facebook}
+              alt="Facebook"
+            />
           </a>
-          <a href="#" className={footerStyle.socialMediaIcons}>
-            <img src={Twitter} alt="Twitter" />
+          <a href="#">
+            <img
+              className={footerStyle.socialMediaIcons}
+              src={Twitter}
+              alt="Twitter"
+            />
           </a>
         </div>
       </div>
