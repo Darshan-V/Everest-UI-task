@@ -1,108 +1,105 @@
 .heroContainer {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background-color: #F5F8FF;
-    position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f5f8ff;
+  position: relative;
 }
 
-.heroTitle{
-    font-family: 'DM Serif Text', serif;
+.heroTitle {
+  font-family: "DM Serif Text", serif;
 }
 
-.heroDescription{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
+.heroDescription {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-.boxImageContainer{
-    display: grid;
-    height: 100%;
-    width:100%;
-    margin-top: 20px;
+.boxImageContainer {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 430px) {
-    .heroContainer {
-        display: flex;
-        align-items: center;
-        background-color: #F5F8FF;
-        position: relative;
-        padding: 6rem;
-    }
-    .heroMessageContainer{
-        max-width: 50%;
-        margin: auto;
-        height: 100%;
-        
-    }
-    .heroTitle{
-        font-family: Roboto;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 56px;
-    }
-    .heroDescription{
-        font-family: Roboto;
-        font-weight: 400;
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    .boxImageContainer{
-        display: grid;
-        height: 100%;
-        width:100%;
-        margin-top: 20px;
-    }
-    .boxImage{
-        width:100%;
-        height:100%;
-        background-position: center;
-        aspect-ratio: 1/1;
-    }
-    
+  .heroContainer {
+    display: flex;
+    background-color: #f5f8ff;
+    padding: 6rem;
+    position: relative;
+  }
+  .heroMessageContainer {
+    max-width: 50%;
+    margin-bottom: auto;
+    height: fit-content;
+  }
+  .heroTitle {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .heroDescription {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .boxImageContainer {
+    display: grid;
+    height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .boxImage {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    position: absolute;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 430px) {
-    .heroContainer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        background: #F5F8FF;
-    }
-    .heroTitle{
-        font-family: 'DM Serif Text';
-        font-size: 48px;
-        line-height: 56px;
-
-    }
-    .heroDescription{
-        font-family: 'DM Sans';
-        font-size: 18px;
-        font-weight: 400px;
-        line-height: 24px;
-        letter-spacing: 1;
-    }
-    .heroMessageContainer{
-        max-width: 302px;
-        margin: auto;
-        height: 100%;
-    }
-    .boxImageContainer{
-        position: relative;
-        width:712px;
-        height: 600px;
-        margin-top: 20px;
-        left: -20px;
-
-    }
-    .boxImage{
-        width:100%;
-        height:100%;
-        background-position: scale;
-        aspect-ratio: 1/1;
-        
-    }
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: #f5f8ff;
+  }
+  .heroTitle {
+    font-family: "DM Serif Text";
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .heroDescription {
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 24px;
+    letter-spacing: 1;
+  }
+  .heroMessageContainer {
+    max-width: 302px;
+    margin: auto;
+    height: 100%;
+  }
+  .boxImageContainer {
+    position: relative;
+    width: 712px;
+    height: 600px;
+    margin-top: 20px;
+    left: -20px;
+  }
+  .boxImage {
+    width: 100%;
+    height: 100%;
+    background-position: scale;
+    aspect-ratio: 1/1;
+  }
 }
