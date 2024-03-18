@@ -18,13 +18,13 @@
   color: #ef8094;
 }
 
-@media screen and (min-width: 900px) {
+@media only screen and (max-width: 1600px) {
   .container {
     position: relative;
     display: flex;
     height: 100%;
     width: 100%;
-    order: 3;
+    justify-content: flex-end;
   }
 
   .stepOneImage {
@@ -40,14 +40,43 @@
   .stepCount {
     position: absolute;
     top: 12rem;
-    left: 4rem;
+    right: 15rem;
     font-size: 14rem;
     font-family: Roboto;
     font-weight: 400;
   }
 }
 
-@media screen and (max-width: 430px) {
+@media only screen and (max-width: 900px) {
+    .container {
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: flex-end ;
+    }
+  
+    .stepOneImage {
+      position: relative;
+      background-image: url("../../../assets/ui/work2-group.svg");
+      height: 430px;
+      width: auto;
+      aspect-ratio: 1/1;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .stepCount {
+      position: absolute;
+      top: 12rem;
+      right: 15rem;
+      font-size: 14rem;
+      font-family: Roboto;
+      font-weight: 400;
+    }
+  }
+
+@media only screen and (max-width: 430px) {
   .container {
     position: relative;
     display: flex;

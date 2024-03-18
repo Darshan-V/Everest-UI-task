@@ -15,7 +15,39 @@
   color: #ef8094;
 }
 
-@media screen and (min-width: 430px) {
+@media only screen and (max-width: 1600px) {
+    .container {
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      margin-top: 6rem;
+      order: 1; /* Forces this element to appear first */
+      align-self: flex-start;
+      margin: auto;
+    }
+  
+    .stepOneImage {
+      position: relative;
+      background-image: url("../../../assets/ui/work3.png");
+      height: 390px;
+      aspect-ratio: 1/1;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .stepCount {
+      position: absolute;
+      top: -1rem;
+      left: -2rem;
+      font-size: 14rem;
+      font-family: Roboto;
+      font-weight: 400;
+    }
+  }
+
+
+@media only screen and (max-width: 900px) {
   .container {
     position: relative;
     display: flex;
@@ -46,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
   .container {
     position: relative;
     display: flex;
