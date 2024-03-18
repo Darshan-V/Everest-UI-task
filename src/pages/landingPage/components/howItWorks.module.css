@@ -155,7 +155,7 @@
 
   .stepsContainerRow {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     margin: 0;
