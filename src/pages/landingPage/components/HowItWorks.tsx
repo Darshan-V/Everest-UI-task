@@ -37,12 +37,21 @@ const HowItWorks: React.FC = () => {
       </span>
       <div className={howItWorksStyles.stepsContainer}>
         {stepsData.map((step, index) => (
-          <div key={index} className={howItWorksStyles.stepContainer}>
+          <div
+            key={index}
+            className={` ${
+              index === 1
+                ? howItWorksStyles.stepsContainerColumn
+                : howItWorksStyles.stepsContainerRow
+            }`}
+          >
             <>{step.imageLabel}</>
-            <h3 className={howItWorksStyles.stepTitle}>{step.title}</h3>
-            <p className={howItWorksStyles.stepDescription}>
-              {step.description}
-            </p>
+            <div className={howItWorksStyles.messageContainer}>
+              <h3 className={howItWorksStyles.stepTitle}>{step.title}</h3>
+              <p className={howItWorksStyles.stepDescription}>
+                {step.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>

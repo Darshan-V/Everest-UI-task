@@ -1,55 +1,110 @@
 .howItWorksContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.stepsContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 2rem;
-
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 2rem;
 }
 
 .heading {
-    font-family: 'DM Serif Text', serif;
+  font-family: "DM Serif Text", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .howItWorksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .stepsContainerColumn {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    align-content: flex-end;
+  }
+
+  .stepsContainerRow {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .stepTitle {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    margin-top: 2rem;
+    white-space: wrap;
+  }
+
+  .stepDescription {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  .heading {
+    font-family: "DM Serif Text";
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
+  }
+
+  .messageContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+@media screen and (max-width: 430px) and (min-width: 300px) {
+  .howItWorksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
 
+  .messageContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media screen and (max-width: 430px){
-    .howItWorksContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem ;
-    }
+  .stepTitle {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    margin-top: 2rem;
+    white-space: wrap;
+  }
 
-    .stepTitle{
-        font-family: Roboto;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 44px;
-        margin-top: 2rem;
-        white-space: wrap;
-    }
+  .stepDescription {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+  }
 
-    .stepDescription{
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 20px;
-    }
-
-    .heading {
-        font-family: 'DM Serif Text';
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin: 0;
-    }
+  .heading {
+    font-family: "DM Serif Text";
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
 }
