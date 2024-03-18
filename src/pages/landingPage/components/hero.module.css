@@ -23,6 +23,47 @@
     margin-top: 20px;
 }
 
+@media screen and (min-width: 430px) {
+    .heroContainer {
+        display: flex;
+        align-items: center;
+        background-color: #F5F8FF;
+        position: relative;
+        padding: 6rem;
+    }
+    .heroMessageContainer{
+        max-width: 50%;
+        margin: auto;
+        height: 100%;
+        
+    }
+    .heroTitle{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .heroDescription{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .boxImageContainer{
+        display: grid;
+        height: 100%;
+        width:100%;
+        margin-top: 20px;
+    }
+    .boxImage{
+        width:100%;
+        height:100%;
+        background-position: center;
+        aspect-ratio: 1/1;
+    }
+    
+}
+
 @media screen and (max-width: 430px) {
     .heroContainer {
         display: flex;
@@ -40,7 +81,7 @@
     .heroDescription{
         font-family: 'DM Sans';
         font-size: 18px;
-        /* font-weight: 400px; */
+        font-weight: 400px;
         line-height: 24px;
         letter-spacing: 1;
     }
@@ -54,7 +95,7 @@
         width:712px;
         height: 600px;
         margin-top: 20px;
-        left: -230px;
+        left: -20px;
 
     }
     .boxImage{
