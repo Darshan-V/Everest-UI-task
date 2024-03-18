@@ -5,6 +5,7 @@ import howItWorksStyles from "./howItWorks.module.css";
 
 import Underline from "../../../assets/ui/UI.svg";
 import StepTwoImage from "./StepTwoImage";
+import StepThreeImage from "./StepThreeImage";
 
 const stepsData = [
   {
@@ -23,6 +24,7 @@ const stepsData = [
     title: "Try it on at home",
     description:
       "Your box will arrive within 3-5 days (usually sooner) and you get the joy to unbox your Upbox. Try it all on and send back whatever you’re not in love with.",
+    imageLabel: <StepThreeImage />,
   },
 ];
 
