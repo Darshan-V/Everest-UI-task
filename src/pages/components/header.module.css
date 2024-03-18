@@ -121,7 +121,7 @@
 
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 550px) {
   .mobileMenuIcon {
     display: block; /* show the icon only on mobile screens */
     padding: 10px;
