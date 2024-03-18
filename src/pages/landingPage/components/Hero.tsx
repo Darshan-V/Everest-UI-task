@@ -18,9 +18,10 @@ const Hero: React.FC = () => {
           and send them directly to your door every month.
         </p>
         <CustomButton text="sign up" borderColor="#EF8094" />
-        <div className={HeroStyles.boxImageContainer}>
-          <img src={boxImage} className={HeroStyles.boxImage} />
-        </div>
+      </div>
+
+      <div className={HeroStyles.boxImageContainer}>
+        <img src={boxImage} className={HeroStyles.boxImage} />
       </div>
     </div>
   );
