@@ -6,6 +6,7 @@ import howItWorksStyles from "./howItWorks.module.css";
 import Underline from "../../../assets/ui/UI.svg";
 import StepTwoImage from "./StepTwoImage";
 import StepThreeImage from "./StepThreeImage";
+import CustomButton from "../../components/CustomButton";
 
 const stepsData = [
   {
@@ -54,6 +55,12 @@ const HowItWorks: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className={howItWorksStyles.tryItButton}>
+        <CustomButton
+          text="Try it for yourself !"
+          borderColor="#EF8094"
+        ></CustomButton>
       </div>
     </div>
   );

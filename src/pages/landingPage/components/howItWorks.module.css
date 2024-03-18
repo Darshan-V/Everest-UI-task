@@ -19,6 +19,12 @@
   margin: 0;
 }
 
+.tryItButton{
+    display: flex;
+    padding: 10rem 0;
+    margin: auto;
+}
+
 @media only screen and (max-width: 1600px) {
   .howItWorksContainer {
     display: flex;
@@ -130,7 +136,7 @@
       margin-left: auto;
     }
   }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 600px) {
   .howItWorksContainer {
     display: flex;
     flex-direction: column;
