@@ -138,10 +138,11 @@
   }
   .boxImageContainer {
     position: relative;
+    display: flex;
     width: 712px;
     height: 600px;
     margin-top: 20px;
-    left: -20px;
+    right: 320px;
   }
   .boxImage {
     width: 100%;
