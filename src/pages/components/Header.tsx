@@ -29,7 +29,9 @@ const Header: React.FC = () => {
             {item}
           </a>
         ))}
-        <button className={HeaderStyle.loginButton}>{`log in >`} </button>
+        <a>
+          <button className={HeaderStyle.loginButton}>{`log in >`} </button>
+        </a>
       </nav>
       <div
         className={`mobile-menu-icon ${HeaderStyle.mobileMenuIcon}`}
