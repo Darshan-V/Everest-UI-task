@@ -76,7 +76,7 @@
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .howItWorksContainer {
       display: flex;
       flex-direction: column;
