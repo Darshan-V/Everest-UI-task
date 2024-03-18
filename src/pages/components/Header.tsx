@@ -8,6 +8,8 @@ import Logo from "../../assets/ui/logo.svg";
 import HeaderStyle from "./header.module.css";
 import MobileMenu from "./MobileMenu";
 
+const NavbarItems = ["this month", "skin", "hair", "bath", "sale"];
+
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
@@ -19,8 +21,15 @@ const Header: React.FC = () => {
     <header className={HeaderStyle.header}>
       <img src={Logo} className={HeaderStyle.logo} />
 
-      <nav className={`navbar ${isMobileMenuOpen ? "open" : ""}`}>
-        {/* Navbar items */}
+      <nav
+        className={`${HeaderStyle.navBar} ${isMobileMenuOpen ? "open" : ""}`}
+      >
+        {NavbarItems.map((item, index) => (
+          <a href="#" key={index} className={HeaderStyle.navbarText}>
+            {item}
+          </a>
+        ))}
+        <button className={HeaderStyle.loginButton}>{`log in >`} </button>
       </nav>
       <div
         className={`mobile-menu-icon ${HeaderStyle.mobileMenuIcon}`}

@@ -16,15 +16,102 @@
   height: fit-content;
 }
 
-.mobileMenuIcon {
-  display: none; /* hide the icon by default */
-}
 
-@media (max-width: 430px) {
+@media only screen and (max-width:1600px) {
+    .mobileMenuIcon {
+      display: block; /* show the icon only on mobile screens */
+      padding: 10px;
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    .mobileMenuIcon {
+      display: none; /* hide the icon by default */
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        background-color: #ffffff;
+        text-align: center;
+        height: fit-content;
+        padding: 10px;
+        margin-right: 10rem;
+        
+    }
+    .loginButton{
+
+    }
+      
+  }
+
+
+
+@media only screen and (max-width:900px) {
   .mobileMenuIcon {
     display: block; /* show the icon only on mobile screens */
     padding: 10px;
     width: fit-content;
     height: fit-content;
+  }
+
+  .mobileMenuIcon {
+    display: none; /* hide the icon by default */
+  }
+
+  .navbarText{
+    font-size: 10px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+
+  .loginButton{
+    font-size: 10px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase; 
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 300px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    background-color: #ffffff;
+    text-align: center;
+    height: fit-content;
+    padding: 10px;
+    margin-right: 4rem;
+    
+}
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width: 430px) {
+  .mobileMenuIcon {
+    display: block; /* show the icon only on mobile screens */
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .navBar{
+    display: none;
   }
 }
