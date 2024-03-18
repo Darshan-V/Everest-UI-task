@@ -22,7 +22,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ closeMenu }) => {
         />
         <div className={MobileMenuStyles.menuButtonsContainer}>
           {MobileMenuList.map((item, index) => (
-            <a href="#" key={index}>
+            <a className={MobileMenuStyles.menuButton} href="#" key={index}>
               {item}
             </a>
           ))}
