@@ -81,7 +81,7 @@
     position: relative;
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 80%;
     margin-top: 3rem;
   }
 
@@ -96,8 +96,8 @@
 
   .stepCount {
     position: absolute;
-    top: -4rem;
-    left: 0rem;
+    top: -1rem;
+    left: 1rem;
     font-size: 14rem;
     font-family: Roboto;
     font-weight: 400;
