@@ -6,7 +6,7 @@ const StepTwoImage: React.FC = () => {
   return (
     <div className={stepTwoStyles.container}>
       <div className={stepTwoStyles.stepOneImage} />
-      <h1 className={stepTwoStyles.stepCount}>2</h1>
+      <span className={stepTwoStyles.stepCount}>2</span>
     </div>
   );
 };
