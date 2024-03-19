@@ -1,22 +1,31 @@
 .container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.stepOneImage {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+  }
 
-.stepCount {
-  color: #ef8094;
-}
+  .stepOneImage {
+    position: relative;
+    background-image: url("../../../assets/ui/work2-group.svg");
+    height: 430px;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stepCount {
+    position: absolute;
+    top: 12rem;
+    right: 15rem;
+    font-size: 14rem;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #ef8094;
+
+  }
 
 @media only screen and (max-width: 1600px) {
   .container {
@@ -44,6 +53,8 @@
     font-size: 14rem;
     font-family: Roboto;
     font-weight: 400;
+    color: #ef8094;
+
   }
 }
 
@@ -73,6 +84,8 @@
       font-size: 14rem;
       font-family: Roboto;
       font-weight: 400;
+      color: #ef8094;
+
     }
   }
 
@@ -103,5 +116,7 @@
     font-size: 14rem;
     font-family: Roboto;
     font-weight: 400;
+    color: #ef8094;
+
   }
 }
