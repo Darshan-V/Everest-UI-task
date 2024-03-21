@@ -43,7 +43,9 @@
     width: auto;
     aspect-ratio: 1/1;
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
+    object-fit: contain;
   }
 
   .stepCount {
